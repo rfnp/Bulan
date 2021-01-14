@@ -1,0 +1,284 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.nav *{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+.nav div{
+    padding: 0px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.men{
+    position: relative;
+    display: inline-block;
+}
+
+.women{
+    position: relative;
+    display: inline-block;
+}
+
+.men-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.men-dropdown a{
+    /* float: none;
+    text-align: left; */
+    display: block;
+    padding: 10px 16px;
+}
+
+.women-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.women-dropdown a{
+    display: block;
+    padding: 10px 16px;
+}
+
+.men:hover .men-dropdown{
+    display: block;
+    /* position: absolute;
+    top: auto;
+    left: 0;
+    height: auto; */
+}
+
+.women:hover .women-dropdown{
+    display: block;
+    /* flex-direction: column; */
+}
+
+@media screen and (max-width:800px){
+    .header{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+        align-items: center;
+    }
+
+    .logo{
+        padding: 10px 30px;
+    }
+
+    .nav{
+        /* padding: 0px 20px; */
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav div{
+        padding: 10px 30px;
+    }
+
+    .men-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+
+    .women-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+}
+
+.promo{
+    padding-top: 10px;
+    width: 100%;
+}
+
+.produk{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    margin: 0px 10% 0px 10%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.produk li{
+    list-style: none;
+    /* margin: 5px;
+    width: 290px;
+    border: 1px solid black; */
+    width: 240px;
+    padding: 20px 10px;
+}
+
+.merek{
+    text-align: start;
+    color: #464646;
+    padding: 5px 0px 5px 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.info{
+    text-align: start;
+    color: #777777;
+    /* color: black; */
+    padding: 1px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.harga{
+    text-align: start;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.produk:hover li{
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.produk img{
+    /* width: 100%;
+    height: 240px; */
+    border-radius: 10px;
+    min-width: 100%;
+    object-fit: cover;
+    padding: 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(70, 70, 70, 0.2), 0 6px 20px 0 rgba(70, 70, 70, 0.19);
+}
+
+
+@media screen and (max-width:800px){
+
+    .produk{
+        padding: 20px 0px;
+        margin: 0px 10% 0px 10%;
+    }
+
+    .produk img{
+        min-width: 50%;
+        max-width: 100%;
+    }
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly; 
+    /* height: 300px; */
+    /* bottom: 100px; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.footer div{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+}
+
+.contact-us{
+    padding-top: 20px;
+}
+
+.payment{
+    padding-top: 20px;
+}
+
+.payment-img img{
+    max-width: 80%;
+}
+
+.find-us{
+    padding-top: 20px;
+}
+
+.find-img img{
+    max-width: 50%;
+}
+
+.footer div div{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE FOOTER */
+@media screen and (max-width:800px){
+    .footer{
+        background-color: black;
+        /* position: static; */
+        display: block;
+        text-align: center;
+    }
+
+    .footer div{
+        background-color: black;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer div div{
+        font-size: 18px;
+    }
+
+    .bulan-content{
+        text-align: justify;
+    }
+
+    .bulan-content p{
+        text-align: center;
+    }
+}
+
+.reg-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}

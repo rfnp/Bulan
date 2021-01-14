@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.nav *{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+.nav div{
+    padding: 0px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.men{
+    position: relative;
+    display: inline-block;
+}
+
+.women{
+    position: relative;
+    display: inline-block;
+}
+
+.men-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.men-dropdown a{
+    /* float: none;
+    text-align: left; */
+    display: block;
+    padding: 10px 16px;
+}
+
+.women-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.women-dropdown a{
+    display: block;
+    padding: 10px 16px;
+}
+
+.men:hover .men-dropdown{
+    display: block;
+    /* position: absolute;
+    top: auto;
+    left: 0;
+    height: auto; */
+}
+
+.women:hover .women-dropdown{
+    display: block;
+    /* flex-direction: column; */
+}
+
+/* RESPONSIVE HEADER */
+@media screen and (max-width:800px){
+    .header{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+        align-items: center;
+    }
+
+    .logo{
+        padding: 10px 30px;
+    }
+
+    .nav{
+        /* padding: 0px 20px; */
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav div{
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .men-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+
+    .women-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+}
+
+.promo{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.hot-promo{
+    padding: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* RESPONSIVE IMAGE GALLERY */
+@media screen and (max-width:800px){
+
+    .produk{
+        padding: 20px 20px;
+        /* padding-left: 0px;
+        padding-right: 0px; */
+
+    }
+
+    .produk img{
+        min-width: 50%;
+        max-width: 100%;
+    }
+    
+}
+
+.deals{
+    padding: 30px 0px 30px 0px;
+}
+
+.payment-method{
+    background-color: #333333;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.payment-method p{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly; 
+    /* height: 300px; */
+    /* bottom: 100px; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.footer div{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+}
+
+.contact-us{
+    padding-top: 20px;
+}
+
+.payment{
+    padding-top: 20px;
+}
+
+.payment-img img{
+    max-width: 80%;
+}
+
+.find-us{
+    padding-top: 20px;
+}
+
+.find-img img{
+    max-width: 50%;
+}
+
+.footer div div{
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE FOOTER */
+@media screen and (max-width:800px){
+    .footer{
+        background-color: black;
+        /* position: static; */
+        display: block;
+        text-align: center;
+    }
+
+    .footer div{
+        background-color: black;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer div div{
+        font-size: 18px;
+    }
+
+    .bulan-content{
+        text-align: justify;
+    }
+
+    .bulan-content p{
+        text-align: center;
+    }
+}
+
+.reg-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.register{
+    border-radius: 15px;
+    /* background-color: #DDDDDD; */
+    background-color: #E5E5E5;
+    max-width: 600px;
+    max-height: 581px;
+    /* padding: 16px; */
+    color: black;
+    padding: 20px;
+}
+
+.register p{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+label{
+    font-weight: 400;
+}
+
+input[type=text], input[type=password], textarea{
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px 20px 0px;
+    display: inline-block;
+    border: none;
+}
+
+#date, #month, #year{
+    padding: 10px 15px;
+    border: none;
+}
+
+#agree{
+    margin-top: 20px;
+}
+
+.reg-button{
+    border-radius: 10px;
+    width: 100%;
+    padding: 13px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.reg-button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+
+    .reg-form{
+        display: block;
+        
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 20%; 
+        margin-top: 30px;
+        margin-bottom: 70px;
+        /* margin: 20px auto 0px auto; */
+    }
+
+    .register{
+        max-width: 400px;
+        max-height: 600px;
+        /* padding: 16px; */
+        color: black;
+        padding: 20px;
+    }
+
+    .register p{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    label{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    input[type=email], input[type=text], input[type=password], textarea{    
+        padding: 5px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    #date, #month, #year{
+        padding: 5px 0px;
+    }
+    
+    .reg-button{
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+}

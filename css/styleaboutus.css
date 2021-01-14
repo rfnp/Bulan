@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.nav *{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+.nav div{
+    padding: 0px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.men{
+    position: relative;
+    display: inline-block;
+}
+
+.women{
+    position: relative;
+    display: inline-block;
+}
+
+.men-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.men-dropdown a{
+    /* float: none;
+    text-align: left; */
+    display: block;
+    padding: 10px 16px;
+}
+
+.women-dropdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.women-dropdown a{
+    display: block;
+    padding: 10px 16px;
+}
+
+.men:hover .men-dropdown{
+    display: block;
+    /* position: absolute;
+    top: auto;
+    left: 0;
+    height: auto; */
+}
+
+.women:hover .women-dropdown{
+    display: block;
+    /* flex-direction: column; */
+}
+
+@media screen and (max-width:800px){
+    .header{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+        align-items: center;
+    }
+
+    .logo{
+        padding: 10px 30px;
+    }
+
+    .nav{
+        /* padding: 0px 20px; */
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav div{
+        padding: 10px 30px;
+    }
+
+    .men-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+
+    .women-dropdown{
+        top: 35px;
+        box-shadow: 0px 8px 16px 5px gray;
+    }
+}
+
+/* ABOUT US */
+.banner{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.about{
+    text-align: center;
+    padding-top: 40px;
+    margin: 0px 15% 0px 15%;
+}
+
+.about p{
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-group{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin: 0px 20% 200px 20%;
+}
+
+.about-group p{
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media screen and (max-width:800px){
+
+    /* .banner{
+        display: block;
+    } */
+
+    .banner img{
+        max-width: 100%;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .about h2{
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .about p{
+        font-size: 14px;
+    }
+
+    .about-group h2{
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .about-group p{
+        font-size: 14px;
+    }
+
+    .about{
+        margin: 0px 10% 0px 10%;
+    }
+
+    .about-group{
+        margin: 0px 5% 50px 5%;
+    }
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly; 
+    /* height: 300px; */
+    /* bottom: 100px; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    height: 200px;
+}
+
+.footer div{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+}
+
+.contact-us{
+    padding-top: 20px;
+}
+
+.payment{
+    padding-top: 20px;
+}
+
+.payment-img img{
+    max-width: 80%;
+}
+
+.find-us{
+    padding-top: 20px;
+}
+
+.find-img img{
+    max-width: 50%;
+}
+
+.footer div div{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE FOOTER */
+@media screen and (max-width:800px){
+    .footer{
+        background-color: black;
+        /* position: static; */
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .footer div{
+        background-color: black;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer div div{
+        font-size: 18px;
+    }
+
+    .bulan-content{
+        text-align: justify;
+    }
+
+    .bulan-content p{
+        text-align: center;
+    }    
+}
+
+.reg-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
